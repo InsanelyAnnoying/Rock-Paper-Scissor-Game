@@ -21,6 +21,7 @@ while game_Loop:
             print("Player Wins")
             player_score += 1
             computer_choice = "Scissor"
+        print(f"Computer Chose {computer_choice}")
     elif player_choice.title() == "Paper":
         if computer_choice == 1:
             print("Player Wins")
@@ -33,6 +34,7 @@ while game_Loop:
             print("Computer Wins")
             computer_score += 1
             computer_choice = "Scissor"
+        print(f"Computer Chose {computer_choice}")
     elif player_choice.title() == "Scissor":
         if computer_choice == 1:
             print("Computer Wins")
@@ -45,10 +47,11 @@ while game_Loop:
         else:
             print("Draw")
             computer_choice = "Scissor"
+        print(f"Computer Chose {computer_choice}")
     else:
         print("Invalid Input. Please try again.")
+        os.system("pause")
 
-    print(f"Computer Chose {computer_choice}")
     Enter = True
 
     while Enter:
